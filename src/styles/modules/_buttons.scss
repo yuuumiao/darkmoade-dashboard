@@ -1,0 +1,16 @@
+button {
+  border-radius: 30px;
+}
+
+button.gradient {
+  @include bg-gradient;
+  padding: 0.9rem 2rem;
+  border: 1px solid $bg-blue;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+button.gradient.reverse {
+  @include bg-gradient(180deg);
+}

@@ -1,0 +1,38 @@
+.Home {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-darkblue;
+}
+
+.Home__left {
+  width: 62vw;
+}
+
+.Home__right {
+  width: 33vw;
+  // margin: 1rem;
+  margin-right: 2rem;
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  @include container;
+  padding: 2rem;
+}
+
+.Home__bottom {
+  display: flex;
+  @include container;
+  padding: 2rem;
+}
+
+.Actions,
+.FAQ,
+.Contact {
+  @include container;
+  padding: 1rem 3rem;
+}

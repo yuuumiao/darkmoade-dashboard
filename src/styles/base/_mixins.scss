@@ -1,0 +1,20 @@
+@mixin bg-gradient($degree: 0deg) {
+  background: rgb(71, 52, 192);
+  background: -webkit-linear-gradient(
+    $degree,
+    rgba(86, 190, 239, 1) 0%,
+    rgba(71, 52, 192, 1) 100%
+  );
+}
+
+@mixin container(
+  $radius-number: 15px,
+  $container-bg-color: $bg-blue,
+  $margin-number: 2rem 1rem,
+  $padding-number: 1rem
+) {
+  border-radius: $radius-number;
+  margin: $margin-number;
+  background-color: $container-bg-color;
+  padding: $padding-number;
+}

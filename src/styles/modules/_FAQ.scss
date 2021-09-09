@@ -1,0 +1,22 @@
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    width: 80%;
+  }
+
+  .icon-arrow {
+    align-self: flex-end;
+  }
+}

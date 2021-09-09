@@ -1,0 +1,46 @@
+.ContractInfo {
+  @include container(
+    $container-bg-color: $bg-darkblue,
+    $margin-number: 0 0 0 2rem,
+    $padding-number: 1rem 2rem
+  );
+  width: 47%;
+  h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    span {
+      margin-left: 1rem;
+      padding-bottom: 7px;
+      color: $baby-blue;
+    }
+  }
+}
+
+.ContractInfo__list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  flex: 1;
+  margin-top: 2rem;
+}
+
+.ContractInfo__listleft {
+  white-space: nowrap;
+}
+
+.ContractInfo__listright {
+  white-space: nowrap;
+  font-weight: 200;
+}
+
+.ContractInfo__listright.address {
+  text-decoration: underline;
+}
+
+.ContractInfo__line {
+  border-bottom: 0.2px solid $white-transparent;
+  width: 4vw;
+  margin: 0 2rem 1vh;
+  align-self: flex-end;
+}

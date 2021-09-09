@@ -1,0 +1,30 @@
+.StackingData {
+  width: 45%;
+  margin-right: 1rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.StackingDataCard {
+  display: flex;
+  justify-content: center;
+  @include container(
+    $radius-number: 10px,
+    $container-bg-color: $bg-darkblue,
+    $margin-number: 0.8rem 0,
+    $padding-number: 1.3rem 0
+  );
+}
+
+.StackingDataCard__left {
+  border-right: 0.3px solid rgba(255, 255, 255, 0.3);
+  padding: 0.1rem 1rem;
+  font-weight: 400;
+}
+
+.StackingDataCard__right {
+  padding: 0.1rem 1rem;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
