@@ -1,6 +1,16 @@
-@mixin bg-gradient($degree: 0deg) {
+@mixin bg-gradient($degree: 90deg) {
   background: rgb(71, 52, 192);
   background: -webkit-linear-gradient(
+    $degree,
+    rgba(86, 190, 239, 1) 0%,
+    rgba(71, 52, 192, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    $degree,
+    rgba(86, 190, 239, 1) 0%,
+    rgba(71, 52, 192, 1) 100%
+  );
+  background: linear-gradient(
     $degree,
     rgba(86, 190, 239, 1) 0%,
     rgba(71, 52, 192, 1) 100%

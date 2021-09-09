@@ -5,6 +5,12 @@
   width: 100vw;
   height: 100vh;
   background-color: $bg-darkblue;
+  @include media(">phone", "<=425px") {
+    background-color: orange;
+  }
+  @include media("<=phone") {
+    background-color: red;
+  }
 }
 
 .Home__left {
@@ -13,26 +19,22 @@
 
 .Home__right {
   width: 33vw;
-  // margin: 1rem;
   margin-right: 2rem;
 }
 
 .Dashboard {
   display: flex;
   flex-direction: column;
-  @include container;
-  padding: 2rem;
+  @include container($padding-number: 2rem);
 }
 
 .Home__bottom {
   display: flex;
-  @include container;
-  padding: 2rem;
+  @include container($padding-number: 3rem 2rem 1.5rem);
 }
 
 .Actions,
 .FAQ,
 .Contact {
-  @include container;
-  padding: 1rem 3rem;
+  @include container($padding-number: 1rem 3rem);
 }

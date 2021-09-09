@@ -1,13 +1,14 @@
 import React from "react";
+import StakeBtn from "./smallComponents/StakeBtn";
 
 function Actions() {
   return (
     <div className="Actions rightside">
       <h3>Actions</h3>
       <div className="Actions__buttons">
-        <button className="gradient">STAKE</button>
+        <StakeBtn type="stake" />
         <br />
-        <button className="gradient reverse">MY STAKE</button>
+        <StakeBtn type="my stake" />
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
 import DashboardCard from "./DashboardCard";
 import { FaSquareFull } from "react-icons/fa";
-import { BiSun, BiMoon } from "react-icons/bi";
-// import { BsSlash } from "react-icons/bs";
+import { ConnectWalletBtn } from "./smallComponents/ConnectWalletBtn";
+import ModeSwitch from "./smallComponents/ModeSwitch";
 
 function Dashboard() {
   return (
@@ -14,14 +14,10 @@ function Dashboard() {
           </span>
           Your dashboard
         </h2>
-        <div className="button-switch">
-          <p>
-            <BiSun className="icon-inactive" />
-            <span className="icons-mode-switch">/</span>
-            <BiMoon />
-          </p>
-          <button className="Dashboard__button">connect wallet</button>
-        </div>
+        <div className="spacer" />
+
+        <ModeSwitch />
+        <ConnectWalletBtn />
       </div>
 
       <div className="Dashboard__cardcontainer">

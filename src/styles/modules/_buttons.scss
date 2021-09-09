@@ -9,8 +9,10 @@ button.gradient {
   border-radius: 20px;
   font-weight: 700;
   font-size: 1.05rem;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 button.gradient.reverse {
-  @include bg-gradient(180deg);
+  @include bg-gradient(270deg);
 }

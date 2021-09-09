@@ -1,18 +1,22 @@
 .Contact__container {
   display: flex;
+  .spacer {
+    flex: 1;
+  }
+}
+
+.Contact__column {
+  margin: 0.5rem 0;
+  display: flex;
   flex-direction: column;
 }
 
-.Contact__row {
+a.Contact__info {
   display: flex;
-  margin: 0.5rem 0;
-}
-
-.Contact__info {
-  display: flex;
-  width: 50%;
+  margin-bottom: 1.3vh;
+  text-decoration: none;
   span {
     align-self: center;
-    margin-right: 1rem;
+    padding-left: 2rem;
   }
 }
