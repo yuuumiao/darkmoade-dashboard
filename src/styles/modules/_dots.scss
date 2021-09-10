@@ -1,0 +1,17 @@
+.dots {
+  height: 2.5vw;
+  width: 2.5vw;
+  background-color: $white;
+  margin: 0 3vw;
+  border-radius: 50%;
+}
+
+.dots.current {
+  background-color: $light-blue;
+}
+
+.DotsWrapper {
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+}

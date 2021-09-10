@@ -6,9 +6,10 @@
 }
 
 .Contact__column {
-  margin: 0.5rem 0;
+  margin: 0.5rem 2vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 a.Contact__info {
@@ -17,6 +18,6 @@ a.Contact__info {
   text-decoration: none;
   span {
     align-self: center;
-    padding-left: 2rem;
+    padding-left: 5vw;
   }
 }

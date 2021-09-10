@@ -1,15 +1,26 @@
 .Home {
   display: flex;
   justify-content: space-around;
-  padding: 1vw;
+  padding: 0 1vw;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
+  overflow: hidden;
   background-color: $bg-darkblue;
-  @include media(">phone", "<=425px") {
-    background-color: orange;
+  overflow: scroll;
+  z-index: 100;
+  @include phone {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    // transform: translate(-100%);
+    // transition: transform 0.3s ease-out;
   }
-  @include media("<=phone") {
-    background-color: red;
+}
+
+.Home.open {
+  @include phone {
+    transform: translate(0);
   }
 }
 
@@ -26,15 +37,51 @@
   display: flex;
   flex-direction: column;
   @include container($padding-number: 2rem);
+  @include phone {
+    height: 75vh;
+  }
 }
 
 .Home__bottom {
   display: flex;
-  @include container($padding-number: 3rem 2rem 1.5rem);
+  @include container($padding-number: 2rem 2rem 1rem);
 }
 
 .Actions,
 .FAQ,
 .Contact {
   @include container($padding-number: 1rem 3rem);
+}
+
+.Home__mobile {
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 3vw;
+    .NavMobile {
+      display: flex;
+      justify-content: space-between;
+      height: 10vh;
+      .spacer {
+        flex: 1;
+      }
+      p {
+        display: flex;
+      }
+    }
+  }
+}
+
+.Home__mobile.open {
+  @include phone {
+    transform: translate(0);
+  }
+}
+
+.NavMobile__menu {
+  @include phone {
+    font-size: 4vw;
+    font-weight: 600;
+    margin: 1vh 0 0 2vh;
+  }
 }

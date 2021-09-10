@@ -1,5 +1,5 @@
 import React from "react";
-import StakeBtn from "./smallComponents/StakeBtn";
+import StakeBtn from "./common/StakeBtn";
 
 function Actions() {
   return (

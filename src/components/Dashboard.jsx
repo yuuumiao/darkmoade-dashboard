@@ -1,32 +1,55 @@
 import React from "react";
 import DashboardCard from "./DashboardCard";
 import { FaSquareFull } from "react-icons/fa";
-import { ConnectWalletBtn } from "./smallComponents/ConnectWalletBtn";
-import ModeSwitch from "./smallComponents/ModeSwitch";
+import { ConnectWalletBtn } from "./common/ConnectWalletBtn";
+import ModeSwitch from "./common/ModeSwitch";
+import { Desktop, Mobile } from "./utilities/Breakpoints";
 
-function Dashboard() {
+const Dashboard = () => {
   return (
-    <div className="Dashboard">
-      <div className="Dashboard__header">
-        <h2>
-          <span className="header-icon">
-            <FaSquareFull />
-          </span>
-          Your dashboard
-        </h2>
-        <div className="spacer" />
+    <div>
+      <Desktop>
+        <div className="Dashboard">
+          <div className="Dashboard__header">
+            <h2>
+              <span className="header-icon">
+                <FaSquareFull />
+              </span>
+              Your dashboard
+            </h2>
+            <div className="spacer" />
+            <ModeSwitch />
+            <ConnectWalletBtn />
+          </div>
 
-        <ModeSwitch />
-        <ConnectWalletBtn />
-      </div>
+          <div className="Dashboard__cardcontainer">
+            <DashboardCard />
+            <DashboardCard />
+            <DashboardCard />
+          </div>
+        </div>
+      </Desktop>
 
-      <div className="Dashboard__cardcontainer">
-        <DashboardCard />
-        <DashboardCard />
-        <DashboardCard />
-      </div>
+      <Mobile>
+        <div className="Dashboard">
+          <div className="Dashboard__header">
+            <h2>
+              <span className="header-icon">
+                <FaSquareFull />
+              </span>
+              Your dashboard
+            </h2>
+          </div>
+
+          <div className="Dashboard__cardcontainer">
+            <DashboardCard />
+            <DashboardCard />
+            <DashboardCard />
+          </div>
+        </div>
+      </Mobile>
     </div>
   );
-}
+};
 
 export default Dashboard;

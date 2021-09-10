@@ -4,3 +4,10 @@
   color: $white;
   box-sizing: border-box;
 }
+
+html,
+body {
+  background: $bg-darkblue;
+  margin: 0;
+  padding: 0;
+}

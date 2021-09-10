@@ -11,12 +11,12 @@ function Contact() {
       <div className="Contact__container">
         <div className="Contact__column">
           <Link to="#" className="Contact__info">
-            <FaTelegram size={iconSize} className="icon-telegram" />
+            <FaTelegram size={iconSize} className="icon telegram" />
             <span>Telegram </span>
           </Link>
 
           <Link to="#" className="Contact__info">
-            <FaTwitter size={iconSize} className="icon-twitter" />
+            <FaTwitter size={iconSize} className="icon twitter" />
             <span> Twitter </span>
           </Link>
         </div>
@@ -25,7 +25,7 @@ function Contact() {
 
         <div className="Contact__column">
           <Link to="#" className="Contact__info">
-            <FaDiscord size={iconSize} className="icon-discord" />
+            <FaDiscord size={iconSize} className="icon discord" />
             <span> Discord </span>
           </Link>
 
