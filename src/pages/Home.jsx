@@ -9,6 +9,7 @@ import { Desktop, Mobile } from "../components/utilities/Breakpoints";
 import NavMobile from "../components/NavMobile";
 import Dots from "../components/common/Dots";
 import SlideDrawer from "../components/SlideDrawer";
+import StakeBtn from "../components/common/StakeBtn";
 
 function Home() {
   // eslint-disable-next-line
@@ -16,7 +17,7 @@ function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <div className={isDrawerOpen ? "Home open" : "Home"}>
+    <div className="Home">
       <Desktop>
         <div className="Home__left">
           <Dashboard />
@@ -34,15 +35,14 @@ function Home() {
       </Desktop>
 
       <Mobile>
-        {/* {isDrawerOpen && <SlideDrawer name={drawerClassName} />} */}
-        {/* <SlideDrawer name={isDrawerOpen ? "SlideDrawer open" : "SlideDrawer"} /> */}
-        <SlideDrawer name="SlideDrawer open" />
-        <div className="Home__mobile">
-          {/* <div className={isDrawerOpen ? "Home__mobile open" : "Home__mobile"}> */}
-
+        <SlideDrawer name={isDrawerOpen ? "SlideDrawer open" : "SlideDrawer"} />
+        <div className={isDrawerOpen ? "Home__mobile open" : "Home__mobile"}>
           <NavMobile setDrawer={() => setIsDrawerOpen(!isDrawerOpen)} />
           <Dashboard />
           <Dots currentIndex={currentDot} />
+          <div className="Home__mobile-buttons">
+            <StakeBtn type="stake" /> <StakeBtn type="my stake" />
+          </div>
         </div>
       </Mobile>
     </div>

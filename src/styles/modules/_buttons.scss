@@ -11,6 +11,10 @@ button.gradient {
   font-size: 1.05rem;
   text-transform: uppercase;
   width: 100%;
+  @include phone {
+    width: 40vw;
+    border-radius: 30px;
+  }
 }
 
 button.gradient.reverse {
@@ -27,8 +31,11 @@ button.gradient.reverse {
   font-weight: 600;
   font-size: 1.05rem;
   @include phone {
-    font-size: 4vw;
+    font-size: 3.5vw;
     white-space: nowrap;
     letter-spacing: 0px;
+    margin: 0;
+    padding: 1.5vh 4vw;
+    background: $bg-darkblue;
   }
 }

@@ -1,8 +1,8 @@
 @include phone {
   .SlideDrawer {
     background-color: $bg-blue;
-    padding: 2% 15%;
-    width: 80vw;
+    padding: 2% 7%;
+    width: 90vw;
     height: 100vh;
 
     .SlideDrawer__menu {
@@ -16,10 +16,6 @@
         color: $baby-blue;
       }
     }
-  }
-
-  .SlideDrawer.open {
-    transform: translate(0);
   }
 
   .FAQ,

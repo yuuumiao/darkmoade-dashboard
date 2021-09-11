@@ -7,20 +7,11 @@
   overflow: hidden;
   background-color: $bg-darkblue;
   overflow: scroll;
-  z-index: 100;
   @include phone {
     padding: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    // transform: translate(-100%);
-    // transition: transform 0.3s ease-out;
-  }
-}
-
-.Home.open {
-  @include phone {
-    transform: translate(0);
   }
 }
 
@@ -38,7 +29,10 @@
   flex-direction: column;
   @include container($padding-number: 2rem);
   @include phone {
-    height: 75vh;
+    height: 65vh;
+    width: 88vw;
+    margin: 1vh 0;
+    padding: 2vh;
   }
 }
 
@@ -53,14 +47,17 @@
   @include container($padding-number: 1rem 3rem);
 }
 
-.Home__mobile {
-  @include phone {
+@include phone {
+  .Home__mobile {
     display: flex;
     flex-direction: column;
     padding: 2vh 3vw;
+    transform: translateX(-38vw);
+    transition: 0.3s ease-out;
     .NavMobile {
       display: flex;
       justify-content: space-between;
+      padding-top: 1vh;
       height: 10vh;
       .spacer {
         flex: 1;
@@ -70,18 +67,28 @@
       }
     }
   }
-}
-
-.Home__mobile.open {
-  @include phone {
-    transform: translate(0);
-  }
-}
-
-.NavMobile__menu {
-  @include phone {
+  .NavMobile__menu {
     font-size: 4vw;
     font-weight: 600;
-    margin: 1vh 0 0 2vh;
+    margin: 1.5vh 0 0 2vh;
+  }
+
+  .Home__mobile-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 0 2vh;
+  }
+
+  .SlideDrawer {
+    transform: translateX(-50vw);
+    transition: 0.3s ease-out;
+  }
+
+  .Home__mobile.open {
+    transform: translateX(43vw);
+  }
+
+  .SlideDrawer.open {
+    transform: translateX(34vw);
   }
 }

@@ -48,7 +48,6 @@ h2 {
   overflow: hidden;
   background-color: #111a3d;
   overflow: scroll;
-  z-index: 100;
 }
 @media (max-width: 767px) {
   .Home {
@@ -56,12 +55,6 @@ h2 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-}
-
-@media (max-width: 767px) {
-  .Home.open {
-    transform: translate(0);
   }
 }
 
@@ -84,7 +77,10 @@ h2 {
 }
 @media (max-width: 767px) {
   .Dashboard {
-    height: 75vh;
+    height: 65vh;
+    width: 88vw;
+    margin: 1vh 0;
+    padding: 2vh;
   }
 }
 
@@ -110,10 +106,13 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 2vh 3vw;
+    transform: translateX(-38vw);
+    transition: 0.3s ease-out;
   }
   .Home__mobile .NavMobile {
     display: flex;
     justify-content: space-between;
+    padding-top: 1vh;
     height: 10vh;
   }
   .Home__mobile .NavMobile .spacer {
@@ -122,22 +121,32 @@ h2 {
   .Home__mobile .NavMobile p {
     display: flex;
   }
-}
 
-@media (max-width: 767px) {
-  .Home__mobile.open {
-    transform: translate(0);
-  }
-}
-
-@media (max-width: 767px) {
   .NavMobile__menu {
     font-size: 4vw;
     font-weight: 600;
-    margin: 1vh 0 0 2vh;
+    margin: 1.5vh 0 0 2vh;
+  }
+
+  .Home__mobile-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 0 2vh;
+  }
+
+  .SlideDrawer {
+    transform: translateX(-50vw);
+    transition: 0.3s ease-out;
+  }
+
+  .Home__mobile.open {
+    transform: translateX(43vw);
+  }
+
+  .SlideDrawer.open {
+    transform: translateX(34vw);
   }
 }
-
 .Dashboard__header {
   display: flex;
   justify-content: space-between;
@@ -289,6 +298,12 @@ button.gradient {
   text-transform: uppercase;
   width: 100%;
 }
+@media (max-width: 767px) {
+  button.gradient {
+    width: 40vw;
+    border-radius: 30px;
+  }
+}
 
 button.gradient.reverse {
   background: #4734c0;
@@ -309,9 +324,12 @@ button.gradient.reverse {
 }
 @media (max-width: 767px) {
   .Dashboard__button {
-    font-size: 4vw;
+    font-size: 3.5vw;
     white-space: nowrap;
     letter-spacing: 0px;
+    margin: 0;
+    padding: 1.5vh 4vw;
+    background: #111a3d;
   }
 }
 
@@ -350,12 +368,22 @@ h2 > .header-icon {
 .Contact__container .spacer {
   flex: 1;
 }
+@media (max-width: 767px) {
+  .Contact__container .spacer {
+    width: 12vw;
+  }
+}
 
 .Contact__column {
-  margin: 0.5rem 2vw;
+  margin: 0.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .Contact__column {
+    margin: 0.5rem 2vw 0.5rem 0;
+  }
 }
 
 a.Contact__info {
@@ -363,9 +391,19 @@ a.Contact__info {
   margin-bottom: 1.3vh;
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  a.Contact__info {
+    margin-bottom: 1.7vh;
+  }
+}
 a.Contact__info span {
   align-self: center;
-  padding-left: 5vw;
+  padding-left: 2vw;
+}
+@media (max-width: 767px) {
+  a.Contact__info span {
+    padding-left: 3vw;
+  }
 }
 
 .FAQ {
@@ -388,10 +426,10 @@ a.Contact__info span {
 }
 
 .dots {
-  height: 2.5vw;
-  width: 2.5vw;
+  height: 2.2vw;
+  width: 2.2vw;
   background-color: white;
-  margin: 0 3vw;
+  margin: 0px 2vw;
   border-radius: 50%;
 }
 
@@ -400,7 +438,7 @@ a.Contact__info span {
 }
 
 .DotsWrapper {
-  padding-bottom: 2vh;
+  padding: 1.5vh 0;
   display: flex;
   justify-content: center;
 }
@@ -418,8 +456,8 @@ a.Contact__info span {
 @media (max-width: 767px) {
   .SlideDrawer {
     background-color: #253261;
-    padding: 2% 15%;
-    width: 80vw;
+    padding: 2% 7%;
+    width: 90vw;
     height: 100vh;
   }
   .SlideDrawer .SlideDrawer__menu {
@@ -432,10 +470,6 @@ a.Contact__info span {
     font-size: 4vw;
     margin: 3vh auto 3vh 0;
     color: #badeff;
-  }
-
-  .SlideDrawer.open {
-    transform: translate(0);
   }
 
   .FAQ,
