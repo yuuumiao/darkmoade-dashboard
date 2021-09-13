@@ -11,9 +11,11 @@ function StackingData() {
         </span>
         MyTV stacking data
       </h2>
-      <StackingDataCard />
-      <StackingDataCard />
-      <StackingDataCard />
+      <StackingDataCard left={"~..,..$"} right={"MYTV rate"} />
+      <div className="spacer" />
+      <StackingDataCard left={"~..,..$"} right={"TVL"} />
+      <div className="spacer" />
+      <StackingDataCard left={12} right={"% supply staked"} />
     </div>
   );
 }

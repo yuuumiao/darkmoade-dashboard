@@ -19,19 +19,15 @@ function Home() {
   return (
     <div className="Home">
       <Desktop>
-        <div className="Home__left">
-          <Dashboard />
-          <div className="Home__bottom">
-            <StackingData />
-            <ContractInfo />
-          </div>
+        <Dashboard />
+        <div className="Home__bottom">
+          <StackingData />
+          <ContractInfo />
         </div>
 
-        <div className="Home__right">
-          <Actions />
-          <Contact />
-          <FAQ />
-        </div>
+        <Actions />
+        <Contact />
+        <FAQ />
       </Desktop>
 
       <Mobile>

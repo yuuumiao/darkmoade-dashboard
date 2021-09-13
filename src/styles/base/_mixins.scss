@@ -20,8 +20,8 @@
 @mixin container(
   $radius-number: 15px,
   $container-bg-color: $bg-blue,
-  $margin-number: 2rem 1rem,
-  $padding-number: 1rem
+  $margin-number: 0,
+  $padding-number: 1vw 1vh
 ) {
   border-radius: $radius-number;
   margin: $margin-number;

@@ -29,3 +29,15 @@ h2 {
   padding-bottom: 1rem;
   margin: 0.5rem 0 1rem;
 }
+
+@include ipad {
+  h2 {
+    font-size: 2vh;
+  }
+  h3 {
+    font-size: 1.8vh;
+  }
+  span {
+    font-size: 1.6vh;
+  }
+}

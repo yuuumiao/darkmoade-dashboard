@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTelegram, FaDiscord, FaTwitter } from "react-icons/fa";
+import { BsFillTriangleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 function Contact() {
@@ -14,7 +15,6 @@ function Contact() {
             <FaTelegram size={iconSize} className="icon telegram" />
             <span>Telegram </span>
           </Link>
-
           <Link to="#" className="Contact__info">
             <FaTwitter size={iconSize} className="icon twitter" />
             <span> Twitter </span>
@@ -30,7 +30,7 @@ function Contact() {
           </Link>
 
           <Link to="#" className="Contact__info">
-            <FaTwitter size={iconSize} />
+            <BsFillTriangleFill size={iconSize} className="icon triangle" />
             <span> Website</span>
           </Link>
         </div>

@@ -6,6 +6,11 @@ h2 > .header-icon {
   margin-right: 0.9rem;
 }
 
+.StackingData svg,
+.icon.triangle {
+  transform: rotate(90deg);
+}
+
 .icon.telegram {
   fill: #1da1f2;
 }

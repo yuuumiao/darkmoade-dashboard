@@ -20,7 +20,6 @@ const Dashboard = () => {
           <ModeSwitch />
           <ConnectWalletBtn />
         </div>
-
         <div className="Dashboard__cardcontainer">
           <DashboardCard />
           <DashboardCard />

@@ -1,12 +1,17 @@
-// $breakpoints: (
-//   "phone": 360px,
-//   "tablet": 768px,
-//   "desktop": 1366px,
-//   "LGdesktop": 1920px,
-// ) !default;
-
 @mixin phone {
   @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media only screen and (max-width: 1366px) and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1367px) {
     @content;
   }
 }
