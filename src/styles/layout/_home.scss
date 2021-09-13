@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     padding: 2vh 3vw;
-    transform: translateX(-42vw);
+    transform: translateX(-40vw);
     transition: 0.3s ease-out;
     .NavMobile {
       display: flex;
@@ -97,16 +97,16 @@
   }
 
   .SlideDrawer {
-    transform: translateX(-50vw);
+    transform: translateX(-36vw);
     transition: 0.3s ease-out;
   }
 
   .Home__mobile.open {
-    transform: translateX(43vw);
+    transform: translateX(40vw);
   }
 
   .SlideDrawer.open {
-    transform: translateX(39vw);
+    transform: translateX(36vw);
   }
 }
 

@@ -126,7 +126,7 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 2vh 3vw;
-    transform: translateX(-42vw);
+    transform: translateX(-40vw);
     transition: 0.3s ease-out;
   }
   .Home__mobile .NavMobile {
@@ -162,16 +162,16 @@ h2 {
   }
 
   .SlideDrawer {
-    transform: translateX(-50vw);
+    transform: translateX(-36vw);
     transition: 0.3s ease-out;
   }
 
   .Home__mobile.open {
-    transform: translateX(43vw);
+    transform: translateX(40vw);
   }
 
   .SlideDrawer.open {
-    transform: translateX(39vw);
+    transform: translateX(36vw);
   }
 }
 @media only screen and (max-width: 1366px) and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
