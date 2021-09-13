@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/darkmode-dashboard/static/css/main.51b358d4.chunk.css",
+    "main.css": "/darkmode-dashboard/static/css/main.231bf2f6.chunk.css",
     "main.js": "/darkmode-dashboard/static/js/main.027639d0.chunk.js",
     "main.js.map": "/darkmode-dashboard/static/js/main.027639d0.chunk.js.map",
     "runtime-main.js": "/darkmode-dashboard/static/js/runtime-main.55b15946.js",
@@ -10,13 +10,13 @@
     "static/js/3.ef12358a.chunk.js": "/darkmode-dashboard/static/js/3.ef12358a.chunk.js",
     "static/js/3.ef12358a.chunk.js.map": "/darkmode-dashboard/static/js/3.ef12358a.chunk.js.map",
     "index.html": "/darkmode-dashboard/index.html",
-    "static/css/main.51b358d4.chunk.css.map": "/darkmode-dashboard/static/css/main.51b358d4.chunk.css.map",
+    "static/css/main.231bf2f6.chunk.css.map": "/darkmode-dashboard/static/css/main.231bf2f6.chunk.css.map",
     "static/js/2.0b9b59a9.chunk.js.LICENSE.txt": "/darkmode-dashboard/static/js/2.0b9b59a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.55b15946.js",
     "static/js/2.0b9b59a9.chunk.js",
-    "static/css/main.51b358d4.chunk.css",
+    "static/css/main.231bf2f6.chunk.css",
     "static/js/main.027639d0.chunk.js"
   ]
 }
