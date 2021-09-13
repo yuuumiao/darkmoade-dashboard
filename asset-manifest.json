@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/yuuumiao/darkmoade-dashboard/static/css/main.b0dadf3a.chunk.css",
-    "main.js": "/yuuumiao/darkmoade-dashboard/static/js/main.027639d0.chunk.js",
-    "main.js.map": "/yuuumiao/darkmoade-dashboard/static/js/main.027639d0.chunk.js.map",
-    "runtime-main.js": "/yuuumiao/darkmoade-dashboard/static/js/runtime-main.55a518e2.js",
-    "runtime-main.js.map": "/yuuumiao/darkmoade-dashboard/static/js/runtime-main.55a518e2.js.map",
-    "static/js/2.0b9b59a9.chunk.js": "/yuuumiao/darkmoade-dashboard/static/js/2.0b9b59a9.chunk.js",
-    "static/js/2.0b9b59a9.chunk.js.map": "/yuuumiao/darkmoade-dashboard/static/js/2.0b9b59a9.chunk.js.map",
-    "static/js/3.ef12358a.chunk.js": "/yuuumiao/darkmoade-dashboard/static/js/3.ef12358a.chunk.js",
-    "static/js/3.ef12358a.chunk.js.map": "/yuuumiao/darkmoade-dashboard/static/js/3.ef12358a.chunk.js.map",
-    "index.html": "/yuuumiao/darkmoade-dashboard/index.html",
-    "static/css/main.b0dadf3a.chunk.css.map": "/yuuumiao/darkmoade-dashboard/static/css/main.b0dadf3a.chunk.css.map",
-    "static/js/2.0b9b59a9.chunk.js.LICENSE.txt": "/yuuumiao/darkmoade-dashboard/static/js/2.0b9b59a9.chunk.js.LICENSE.txt"
+    "main.css": "/yuuumiao/darkmode-dashboard/static/css/main.b0dadf3a.chunk.css",
+    "main.js": "/yuuumiao/darkmode-dashboard/static/js/main.027639d0.chunk.js",
+    "main.js.map": "/yuuumiao/darkmode-dashboard/static/js/main.027639d0.chunk.js.map",
+    "runtime-main.js": "/yuuumiao/darkmode-dashboard/static/js/runtime-main.a0eee1ae.js",
+    "runtime-main.js.map": "/yuuumiao/darkmode-dashboard/static/js/runtime-main.a0eee1ae.js.map",
+    "static/js/2.0b9b59a9.chunk.js": "/yuuumiao/darkmode-dashboard/static/js/2.0b9b59a9.chunk.js",
+    "static/js/2.0b9b59a9.chunk.js.map": "/yuuumiao/darkmode-dashboard/static/js/2.0b9b59a9.chunk.js.map",
+    "static/js/3.ef12358a.chunk.js": "/yuuumiao/darkmode-dashboard/static/js/3.ef12358a.chunk.js",
+    "static/js/3.ef12358a.chunk.js.map": "/yuuumiao/darkmode-dashboard/static/js/3.ef12358a.chunk.js.map",
+    "index.html": "/yuuumiao/darkmode-dashboard/index.html",
+    "static/css/main.b0dadf3a.chunk.css.map": "/yuuumiao/darkmode-dashboard/static/css/main.b0dadf3a.chunk.css.map",
+    "static/js/2.0b9b59a9.chunk.js.LICENSE.txt": "/yuuumiao/darkmode-dashboard/static/js/2.0b9b59a9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.55a518e2.js",
+    "static/js/runtime-main.a0eee1ae.js",
     "static/js/2.0b9b59a9.chunk.js",
     "static/css/main.b0dadf3a.chunk.css",
     "static/js/main.027639d0.chunk.js"
